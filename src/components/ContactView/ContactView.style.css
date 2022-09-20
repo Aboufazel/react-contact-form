@@ -27,6 +27,45 @@
 .contact_info{
     display: flex;
     flex-direction: column;
+    gap: 5px;
     padding: 0 0 0 15px;
     width: 80%;
+}
+
+.Btn_Box{
+    display: flex;
+    margin: 5px 0 0 0;
+    gap: 8px;
+}
+
+.Btn_Box button{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 0;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.DeleteBtn{
+    background: darkred;
+    color: white;
+    box-shadow: 0 0 4px darkred;
+}
+
+.DeleteBtn:hover{
+    background: white;
+    color: darkred;
+    cursor: pointer;
+}
+.EditBtn{
+    background: #292826;
+    color: #F9D342;
+    box-shadow: 0 0 4px #292826;
+}
+
+.EditBtn:hover{
+    background: white;
+    color: #292826;
+    cursor: pointer;
 }

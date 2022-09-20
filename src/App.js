@@ -16,7 +16,7 @@ function App() {
      <div>
        <HeaderAndLogo/>
        <AddBtn state={state} setState={setState}/>
-         {state.map(contacts => <ContactView id={contacts.id} fullName={contacts.fullName} mail={contacts.mail}/>)}
+         {state.map(contacts => <ContactView id={contacts.id} fullName={contacts.fullName} mail={contacts.mail} state={state} setState={setState}/>)}
      </div>
   );
 }
