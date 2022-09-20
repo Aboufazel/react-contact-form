@@ -6,9 +6,13 @@ function ContactView ({id , fullName , mail}){
     return(
         <div className={'contactsBox'}>
             <div key={id} className={'contactsBox_items'}>
-                <RandomAvatar name={fullName}/>
-                <div>ContactName: {fullName}</div>
-                <div>ContactMail: {mail}</div>
+                <div className={'avataar_box'}>
+                    <RandomAvatar name={fullName}/>
+                </div>
+                <div className={'contact_info'}>
+                    <div>ContactName: {fullName}</div>
+                    <div>ContactMail: {mail}</div>
+                </div>
             </div>
         </div>
     );

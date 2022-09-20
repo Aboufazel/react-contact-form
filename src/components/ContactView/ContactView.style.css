@@ -6,7 +6,6 @@
 
 .contactsBox_items{
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 8px;
     background: #F9D342;
@@ -16,4 +15,18 @@
     justify-content: center;
     font-weight: bold;
     box-shadow: 0 0 5px #292826;
+}
+
+.avataar_box{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 15px;
+    width: 20%;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 15px;
+    width: 80%;
 }
