@@ -13,21 +13,23 @@ function ContactView ({id , fullName , mail , state ,setState}){
        setState(state.filter(item => item.id !== id))
    }
     return(
-        <div className={'contactsBox'}>
-            <div key={id} className={'contactsBox_items'}>
-                <div className={'avataar_box'}>
-                    <RandomAvatar name={fullName}/>
-                </div>
-                <div className={'contact_info'}>
-                    <div>ContactName: {fullName}</div>
-                    <div>ContactMail: {mail}</div>
-                    <div className={'Btn_Box'}>
-                        <button onClick={() => manageDelete(id)} className={'DeleteBtn'}>
-                            <FaEraser/>Delete
-                        </button>
-                        <button className={'EditBtn'}>
-                            <FaEdit/>Edit
-                        </button>
+        <div className={'mobileContainer'}>
+            <div className={'contactsBox'}>
+                <div key={id} className={'contactsBox_items'}>
+                    <div className={'avataar_box'}>
+                        <RandomAvatar name={fullName}/>
+                    </div>
+                    <div className={'contact_info'}>
+                        <div>ContactName: {fullName}</div>
+                        <div>ContactMail: {mail}</div>
+                        <div className={'Btn_Box'}>
+                            <button onClick={() => manageDelete(id)} className={'DeleteBtn'}>
+                                <FaEraser/>Delete
+                            </button>
+                            <button className={'EditBtn'}>
+                                <FaEdit/>Edit
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

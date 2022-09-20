@@ -1,8 +1,37 @@
+
+
+
+
+
 .contactsBox{
     display: flex;
     justify-content: center;
     margin: 25px 0 0 0;
 }
+
+@media only screen and (max-width:1024px) {
+    .contactsBox_items{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #F9D342;
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 12px;
+        width: 85% !important;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0 0 5px #292826;
+    }
+    .contact_info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 0 0 35px !important;
+        width: 80%;
+    }
+}
+
 
 .contactsBox_items{
     display: flex;
