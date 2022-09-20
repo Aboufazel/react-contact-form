@@ -1,0 +1,19 @@
+.contactsBox{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+.contactsBox_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #F9D342;
+    border-radius: 12px;
+    padding: 15px;
+    width: 25%;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px #292826;
+}
